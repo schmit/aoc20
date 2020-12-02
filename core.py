@@ -24,3 +24,7 @@ def solve(fn, day):
 
 def solve_sample(fn, sample):
     return fn(read_sample_input(sample))
+
+
+def xor(a, b):
+    return bool(a) ^ bool(b)
