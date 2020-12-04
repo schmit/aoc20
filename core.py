@@ -10,8 +10,7 @@ def read_input(day, path="input/"):
 
 def read_sample_input(s):
     for line in s.split("\n"):
-        if len(line) > 0:
-            yield line.strip()
+        yield line.strip()
 
 
 def prod(seq):
