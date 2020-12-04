@@ -5,13 +5,13 @@ import toolz.curried as tz
 def read_input(day, path="input/"):
     with open(f"{path}{day}", "r") as f:
         for line in f:
-            yield line
+            yield line.strip()
 
 
 def read_sample_input(s):
     for line in s.split("\n"):
         if len(line) > 0:
-            yield line
+            yield line.strip()
 
 
 def prod(seq):
