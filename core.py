@@ -17,12 +17,12 @@ def prod(seq):
     return tz.reduce(operator.mul, seq, 1)
 
 
-def solve(fn, day):
-    return fn(read_input(day))
+def solve(fn, day, *args, **kwargs):
+    return fn(read_input(day), *args, **kwargs)
 
 
-def solve_sample(fn, sample):
-    return fn(read_sample_input(sample))
+def solve_sample(fn, sample, *args, **kwargs):
+    return fn(read_sample_input(sample), *args, **kwargs)
 
 
 def xor(a, b):
